@@ -24,7 +24,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
         transition={{ duration: 0.5 }}
         className="text-5xl md:text-6xl font-semibold text-neutral-100 mb-3"
       >
-        Welcome.
+        New Research Task
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 20 }}
