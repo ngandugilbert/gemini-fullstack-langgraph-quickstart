@@ -1,4 +1,5 @@
 import { InputForm } from "./InputForm";
+import { motion } from "framer-motion";
 
 interface WelcomeScreenProps {
   handleSubmit: (
@@ -17,21 +18,36 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
 }) => (
   <div className="h-full flex flex-col items-center justify-center text-center px-4 flex-1 w-full max-w-3xl mx-auto gap-4">
     <div>
-      <h1 className="text-5xl md:text-6xl font-semibold text-neutral-100 mb-3">
+      <motion.h1
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-5xl md:text-6xl font-semibold text-neutral-100 mb-3"
+      >
         Welcome.
-      </h1>
-      <p className="text-xl md:text-2xl text-neutral-400">
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="text-xl md:text-2xl text-neutral-400"
+      >
         How can I help you today?
-      </p>
+      </motion.p>
     </div>
-    <div className="w-full mt-4">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: 0.4 }}
+      className="w-full mt-4"
+    >
       <InputForm
         onSubmit={handleSubmit}
         isLoading={isLoading}
         onCancel={onCancel}
         hasHistory={false}
       />
-    </div>
+    </motion.div>
     <p className="text-xs text-neutral-500">
       Powered by ningo.ai
     </p>
