@@ -1,8 +1,8 @@
-# Gemini Fullstack LangGraph Quickstart
+# ningo.ai
 
-This project demonstrates a fullstack application using a React frontend and a LangGraph-powered backend agent. The agent is designed to perform comprehensive research on a user's query by dynamically generating search terms, querying the web using Google Search, reflecting on the results to identify knowledge gaps, and iteratively refining its search until it can provide a well-supported answer with citations. This application serves as an example of building research-augmented conversational AI using LangGraph and Google's Gemini models.
+This project demonstrates a fullstack application using a React frontend and a LangGraph-powered backend agent. The agent is designed to perform comprehensive research on a user's query by dynamically generating search terms, querying the web using Google Search, reflecting on the results to identify knowledge gaps, and iteratively refining its search until it can provide a well-supported answer with citations. This application serves as an example of building research-augmented conversational AI using LangGraph and Google's Gemini models, all part of the ningo.ai platform.
 
-<img src="./app.png" title="Gemini Fullstack LangGraph" alt="Gemini Fullstack LangGraph" width="90%">
+<img src="./app.png" title="ningo.ai" alt="ningo.ai" width="90%">
 
 ## Features
 
@@ -97,7 +97,7 @@ _Note: If you are not running the docker-compose.yml example or exposing the bac
 
    Run the following command from the **project root directory**:
    ```bash
-   docker build -t gemini-fullstack-langgraph -f Dockerfile .
+   docker build -t ningo-ai -f Dockerfile .
    ```
 **2. Run the Production Server:**
 
